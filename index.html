@@ -1,222 +1,162 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Rodrigo Baltazar</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/w3.css">
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-            html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-        </style>
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    </head>
-<body class="w3-light-grey">
+<html lang="pt-BR">
+<head>
+  <meta name="author" content="Rodrigo Baltazar">
+  <meta name="description" content="O website de Rodrigo Baltazar tem como objetivo
+  agregar todo conteúdo, portfolio, links, blog-posts, curriculo e demais informações uteis
+  do interesse do autor.">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Production version -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Css e Js próprios -->
+  <script src="js/site-pessoal.js"></script>
+  <link rel="stylesheet" href="css/site-pessoal.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Rodrigo de Lemos Baltazar</title>
+</head>
+<body>
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <div class="container">
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="images/rbaltazar.jpeg" style="width:100%" alt="Rodrigo Baltazar Pic">
-          <div class="w3-display-bottomleft w3-container w3-text-white">
-            <h2>Rodrigo Baltazar</h2>
-          </div>
+    <!-- Barra de navegação -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary stick-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Rodrigo Baltazar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Media
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Fotos</a></li>
+                <li><a class="dropdown-item" href="#">Vídeos</a></li>
+                <li><a class="dropdown-item" href="#">Links</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Currículo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+            
+          </ul>
         </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Full Stack Developer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Porto Alegre, BR</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>rodrigobaltazarinf at gmail.com</p>
-          <a href="/blog">
-            <p><i class="fa fa-flask fa-fw w3-margin-right w3-large w3-text-teal"></i>Blog</p>
-          </a>
-          <hr>
+      </div>
+    </nav>
+  
 
-          <!-- <p>Python</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">Python</div>
-          </div>
-          <p>Html</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">
-              <div class="w3-center w3-text-white">Html</div>
+      <main>
+
+      <!-- Painel primário de visualização de todas informações -->
+
+
+        aqui virá conteúdo principal
+      </main>
+
+<!-- Footer -->
+<footer class="bg-primary text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+     
+      <!-- Facebook -->
+      <a class="btn btn-primary" href="https://www.facebook.com/rlbaltazar/" role="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </svg>
+      </a>
+      </button>
+
+      <!-- Mastodon -->
+      <a class="btn btn-primary" href="https://mastodon.social/web/@RodrigoBaltazar" role="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-mastodon" viewBox="0 0 16 16">
+          <path d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"/>
+        </svg>
+      </a>
+      <!-- Linkedin -->
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/rodrigo-baltazar-b7537a3a/" role="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+        </svg>
+      </a>
+      <!-- Github -->
+      <a class="btn btn-primary" href="https://github.com/RodrigoBaltazar" role="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+      </a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Porto Alegre, RS - Brazil
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+
+        <!-- CONTATO - ENVIAR MENSAGEM -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Contato</h5>
+
+          <form action="/send" method="POST">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
             </div>
-          </div>
-          <p>CSS</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">CSS</div>
-          </div>
-          <p>Javascript</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">Javascript</div>
-          </div>
-          <p>PHP</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">PHP</div>
-          </div>
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Frameworks</b></p>
-          <p>Laravel</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">Laravel</div>
-          </div>
-          <p>Twitter Bootstrap</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">Twitter Bootstrap</div>
-          </div>
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Server Skills</b></p>
-          <p>Linux / Centos / Debian</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">Linux / Centos / Debian</div>
-          </div>
-          <p>AWS / Digital Ocean</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">AWS / Digital Ocean</div>
-          </div>
-          <br> -->
-
-          <!-- <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:85%"></div>
-          </div>
-           <p>Spanish</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
-          </div> 
-          <p>Portuguese</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:95%"></div>
-          </div>
-          <br> -->
-          <hr>
-          <a href="portfolio.html">
-            <p class="w3-large w3-text-theme"><b><i class="fa fa-id-card fa-fw w3-margin-right w3-text-teal"></i>Portfolio</b></p>
-            <p>2021</p>
-            <p>2020</p>
-            <p>2019</p>
-            <p>2018</p>
-            <p>2017</p>
-            <p>2016</p>
-        </a>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal"></div>
-          </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea type="text" class="form-control" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary">Submit</button>
+          </form>
         </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <!-- Inicio área de trabalho -->
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Junior Python Developer / Diax Capital</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Agosto 2021 -<span class="w3-tag w3-teal w3-round">Novembro - 2021</span></h6>
-          <p>Python, Postgresql, Bootstrap, Django 3.2, Unix environment.</p>
-          <hr>
-        </div>
-
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Full Stack Developer / <a href="https://stormtecnologia.com.br/">Storm Tecnologia</a></b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>February 2021 - May 2021</h6>
-          <p>PHP 5.3 developer, MYSQL, Bootstrap, Jquery, Unix environment.</p>
-          <p>Member of FIFO team, delivering features, fixing bugs using agile, kanban, jira, scrum.</p>
-          <hr>
-        </div>
-      
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Full Stack Developer / <a href="https://hacklab.com.br/">hacklab</a></b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>October 2020 - Dezember 2020</h6>
-          <p>First experience in a team of developers in a position with few responsabilities around little adjustments over the
-            the company open sourced product called <a href="https://github.com/mapasculturais/plugin-AldirBlanc">Mapas Culturais</a> using php, postgresql, slim, bootstrap, html, css.
-          </p>
-          <hr>
-        </div>
-
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Full Stack Developer / Freelancer</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dez 2015 - October 2020</h6>
-          <p>Working as freelancer full stack solutions developer for about five years.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Internship Sysadmin/ www.celena.com.br</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2014 - Jun 2014</h6>
-          <p>First real experience with servers, automate routines and solutions deployment.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Co-Participant / www.doceesquina.com.br</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2009 - Mar 2014</h6>
-          <p>Professionalize the business and setup a board of directors to run the company. </p><br>
-        </div>
+        <!--Grid column-->
       </div>
-
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <!-- h5 class="w3-opacity"><b>Unisinos</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020-2023</h6>
-          <p>Bachelor in Systems Information </p> -->
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>UFRGS</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2021 - 20??</h6>
-          <p>Bachelor in Computer Science</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>UFC</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015/01 - 2015</h6>
-          <p>Bachelor of Software Engineering</p><br>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white ">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-bullhorn fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Midia</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Flisol 2015 - Staff</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2015</h6>
-          
-            <iframe width="250" height="160" src="https://www.youtube.com/embed/K0UYO0Pofb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <!-- width="560" height="315" -->
-          
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>IFRS - Speaker</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2018</h6>
-          <p>Spoke about the freelancer's life, the good and bad parts.</p>
-          <hr>
-        </div>
-      </div>
-
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
   </div>
-  
-  <!-- End Page Container -->
-</div>
+  <!-- Grid container -->
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <a href="https://www.linkedin.com/in/rodrigo-baltazar-b7537a3a/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyleft:
+    <a class="text-white" href="#">Rodrigo Baltazar </a>
+  </div>
+  <!-- Copyright -->
 </footer>
+<!-- Footer -->
 
-<script src="googleAnalytics.js"></script> 
-
+</div> <!-- Div final do container inicial -->
 </body>
 </html>
