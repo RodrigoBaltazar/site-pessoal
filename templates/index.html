@@ -131,11 +131,11 @@
           <form action="/send" method="POST">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail" name="email">
+              <input id="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail" name="email" required>
             </div>
             <div class="mb-3">
               <label for="mensagem" class="form-label">Mensagem</label>
-              <textarea type="text" class="form-control" id="mensagem" placeholder="Digite sua mensagem" name="mensagem"></textarea>
+              <textarea minlength="1" type="text" class="form-control" id="mensagem" placeholder="Digite sua mensagem" name="mensagem" required></textarea>
             </div>
             <button type="submit" class="btn btn-secondary" id="btn-enviar">Enviar</button>
 
