@@ -29,7 +29,6 @@ const btnEnviarLoader = document.querySelector('#btn-enviar-loader');
 const msgTextArea = document.querySelector('#mensagem');
 const emailField = document.querySelector('#email');
 
-    //NAO ESTA SENDO USADO let minlength = msgTextArea.getAttribute('minlength');
 
 btnEnviar.addEventListener("click", ()=>{
 // Prevem botão enviar de trocar para o enviando ao tentar enviar mensagem & email vazios
@@ -41,13 +40,6 @@ btnEnviar.addEventListener("click", ()=>{
 })
 
 
-
-
-
-//msgTextArea.addEventListener("input", (event) => alert("Tem coisa"));
-
-// Tira a mensagem de sucesso depois de 5 segundos
-
-// setTimeout(() => {
-//   document.querySelector('#alerta').style.display = 'none';
-// }, 5000)
+setTimeout(() => {
+  document.querySelector('#alerta').style.display = 'none';
+}, 5000)
