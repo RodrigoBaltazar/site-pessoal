@@ -3,7 +3,7 @@
 <head>
   <meta name="author" content="Rodrigo Baltazar">
   <meta name="description" content="O website de Rodrigo Baltazar tem como objetivo
-  agregar todo conteúdo, portfolio, links, blog-posts, curriculo e demais informações uteis
+  agregar todo conteúdo, portfólio, links, blog-posts, curriculo e demais informações uteis
   do interesse do autor.">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,7 +54,7 @@
               <a class="nav-link" href="#">Currículo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#">Portfólio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contato</a>
@@ -125,28 +125,28 @@
         <!--Grid column-->
 
         <!-- CONTATO - ENVIAR MENSAGEM -->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Contato</h5>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mx-auto">
+              <h5 class="text-uppercase">Contato</h5>
 
-          <form action="/send" method="POST">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input id="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail" name="email" required>
-            </div>
-            <div class="mb-3">
-              <label for="mensagem" class="form-label">Mensagem</label>
-              <textarea minlength="1" type="text" class="form-control" id="mensagem" placeholder="Digite sua mensagem" name="mensagem" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-secondary" id="btn-enviar">Enviar</button>
+              <form action="/send" method="POST">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input id="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail" name="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label">Mensagem</label>
+                  <textarea minlength="1" type="text" class="form-control" id="mensagem" placeholder="Digite sua mensagem" name="mensagem" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary" id="btn-enviar">Enviar</button>
 
-             <!-- Botão de enviando com spinner -->
+                <!-- Botão de enviando com spinner -->
 
-             <button class="btn btn-secondary" type="button" id="btn-enviar-loader" disabled>
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                Enviando...
-             </button>
+                <button class="btn btn-secondary" type="button" id="btn-enviar-loader" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Enviando...
+                </button>
 
-          </form>
+              </form>
         </div>
         <!-- Grid column -->
       </div>
