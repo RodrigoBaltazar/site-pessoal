@@ -41,5 +41,5 @@ btnEnviar.addEventListener("click", ()=>{
 
 
 setTimeout(() => {
-  document.querySelector('#alerta').style.display = 'none';
+  document.querySelector('#msg-alert').style.display = 'none';
 }, 5000)

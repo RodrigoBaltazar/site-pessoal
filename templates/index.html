@@ -153,6 +153,20 @@
       <!--Grid row-->
     </section>
     <!-- Section: Links -->
+
+
+    <!-- FLASH MESSAGE -->
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <div id="msg-alert" class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill"></i>{{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" arial-label="Close"></button>
+          </div>
+      {% endfor %}
+    {% endif %}
+    {% endwith %}
+
   </div>
   <!-- Grid container -->
 
