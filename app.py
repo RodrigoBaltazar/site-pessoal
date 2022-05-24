@@ -11,6 +11,9 @@ mail_settings = {
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
     "MAIL_USERNAME": email,
+    # Linha abaixo previne de enviar e-mails durante desenvolvimento Comentar e descomentar
+    # para send() funcionar
+    "MAIL_SUPPRESS_SEND": True,
     "MAIL_PASSWORD": senha
 }
 
@@ -45,10 +48,11 @@ def send():
                 {formContato.mensagem}
             '''        
         )
-
-        mail.send(msg)
-        flash('Mensagem enviada com sucesso!')
-
+        if (msg.body != ""):
+            mail.send(msg)
+            flash('Mensagem enviada com sucesso!')
+        else:
+            print("TENTOU ENVIAR EMAIL VAZIO")
     return redirect('/')
 
 if __name__ == '__main__':
