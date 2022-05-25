@@ -25,7 +25,7 @@
   <div class="container">
 
     <!-- Barra de navegação -->
-
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary stick-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Rodrigo Baltazar</a>
@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -54,7 +54,7 @@
               <a class="nav-link" href="#">Currículo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfólio</a>
+              <a class="nav-link" href="/portfolio">Portfólio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contato">Contato</a>
@@ -64,14 +64,13 @@
         </div>
       </div>
     </nav>
-  
 
       <main>
 
       <!-- Painel primário de visualização de todas informações -->
 
-
-        aqui virá conteúdo principal
+        Caso não tenha bloco de conteúdo abaixo, aparece aqui apenas para separar enquanto coloco restante
+        {% block content %}{% endblock %}
       </main>
 
 <!-- Footer -->

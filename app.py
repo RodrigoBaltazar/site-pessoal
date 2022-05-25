@@ -30,6 +30,10 @@ class Contato:
 def index():
     return render_template('index.html')
 
+@app.route('/portfolio')
+def get_portfolio():
+    return render_template('portfolio.html')
+
 @app.route('/send', methods=['GET', 'POST'])
 def send():
     if request.method == 'POST':
