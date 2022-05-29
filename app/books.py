@@ -1,4 +1,4 @@
-from flask import Blueprint, current_app, jsonify, request
+from flask import Blueprint, current_app, request, jsonify
 from .model import Book
 from .serealizer import BookSchema
 
@@ -12,14 +12,18 @@ def books():
     return bs.jsonify(result), 200
 
 @bp_books.route('/create-book', methods=['POST'])
-def create_book():
-    bs = BookSchema()
-    book =  bs.load(request.json)
+# REFAZER usando https://marshmallow.readthedocs.io/en/stable/examples.html marshmallow 3
+# 
+# def create_book():
+#     bs = BookSchema()
+#     book, error =  bs.load(request.json)
 
-    current_app.db.session.add(book)
-    current_app.db.session.commit()
-
-    return bs.jsonify(book), 201
+#     if error:
+#         return jsonify(error), 401
+    
+#     current_app.db.session.add(book)
+#     current_app.db.session.commit()
+#     return {}
 
 @bp_books.route('/update-book', methods=['POST'])
 def update_book():
