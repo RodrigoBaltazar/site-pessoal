@@ -1,4 +1,4 @@
-from flask import Blueprint, current_app, request
+from flask import Blueprint, current_app, jsonify, request
 from .model import Book
 from .serealizer import BookSchema
 
@@ -14,7 +14,8 @@ def books():
 @bp_books.route('/create-book', methods=['POST'])
 def create_book():
     bs = BookSchema()
-    book, error =  bs.load(request.json)
+    book =  bs.load(request.json)
+
     current_app.db.session.add(book)
     current_app.db.session.commit()
 

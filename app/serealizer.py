@@ -12,6 +12,7 @@ def configure(app):
 class BookSchema(ma.Schema):
     class Meta:
         model = Book
+        load_instance = True
 
     book = fields.Str(required=True)    
 
