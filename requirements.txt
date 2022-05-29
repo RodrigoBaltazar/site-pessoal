@@ -8,3 +8,8 @@ Flask==2.1.2
 # Flask Packages
 
 Flask-Mail==0.9.1
+flask_sqlalchemy
+flask_migrate
+flask_marshmallow
+marshmallow_sqlalchemy
+flask-jwt-extended

@@ -1,5 +1,7 @@
 from flask import Flask, render_template, redirect, request, flash
 from flask_mail import Mail, Message
+import sys
+sys.path.append('./')
 from config import email, senha
 
 app = Flask(__name__)

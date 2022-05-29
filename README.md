@@ -1,9 +1,12 @@
-# site
-Personal Website
+# Personal Website
 
 2022 New Version.
 
 
-Flask 2.1.x
+## How to run this project
 
-Bootstrap 5.2.0
+```sh
+export FLASK_APP=app
+export FLASK_ENV=Development
+export FLASK_DEBUG=True
+```
