@@ -15,7 +15,7 @@ mail_settings = {
     "MAIL_USERNAME": email,
     # Linha abaixo previne de enviar e-mails durante desenvolvimento Comentar e descomentar
     # para send() funcionar
-    "MAIL_SUPPRESS_SEND": True,
+    #"MAIL_SUPPRESS_SEND": True,
     "MAIL_PASSWORD": senha
 }
 

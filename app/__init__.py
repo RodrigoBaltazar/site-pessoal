@@ -1,4 +1,9 @@
-from flask import Flask
+'''
+    Ativando Abaixo muda o paradigma para suportar o CRUD de books que até o dia 17-06-2022 ainda precisava ser feito
+    
+    '''
+
+'''from flask import Flask
 from flask_migrate import Migrate
 from .model import configure as config_db
 from .serealizer import configure as config_ma
@@ -16,4 +21,4 @@ def create_app():
     from .books import bp_books
     app.register_blueprint(bp_books)
 
-    return app
+    return app'''
