@@ -1,0 +1,31 @@
+version: '3'
+services:
+    postgres:
+        image: 'postgres:latest'
+        env_file:
+            - .env_db
+        volumes:
+           - ./db-data/:/var/lib/postgresql/data/
+
+    redis:
+         image: 'redis:latest'
+    nginx:
+        restart: always
+        build:
+            dockerfile: Dockerfile
+            context: ./nginx-conf
+        ports:
+           - '5000:80'
+        #depends_on:
+        #   - webserver
+    webserver:
+        build:
+            dockerfile: Dockerfile
+            context: ./
+        volumes:
+            - ./:/app
+        #command: gunicorn --bind :5000 app:app --chdir ./
+        ports:
+            - "80:5000"
+volumes:
+    app:

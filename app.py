@@ -7,6 +7,8 @@ from config import email, senha
 app = Flask(__name__)
 app.secret_key = 'kasjkkdjaskjdajiuqwieuqwjeqkejnknncnxxxxxxxxxiiiiiiososaa1234444#'
 
+app.config['DEBUG'] = True
+
 mail_settings = {
     "MAIL_SERVER": 'smtp.gmail.com',
     "MAIL_PORT": 465,
@@ -62,4 +64,4 @@ def send():
     return redirect('/')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, host='0.0.0.0')

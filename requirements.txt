@@ -13,3 +13,7 @@ flask_migrate
 flask_marshmallow
 marshmallow_sqlalchemy
 flask-jwt-extended
+
+# Gunicorn
+
+gunicorn==20.1.0
