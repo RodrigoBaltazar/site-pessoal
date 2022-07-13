@@ -15,7 +15,7 @@ services:
             dockerfile: Dockerfile
             context: ./nginx-conf
         ports:
-           - '5000:80'
+           - '81:81'
         #depends_on:
         #   - webserver
     webserver:
@@ -26,6 +26,12 @@ services:
             - ./:/app
         #command: gunicorn --bind :5000 app:app --chdir ./
         ports:
-            - "80:5000"
+            - "5000:5000"
 volumes:
     app:
+
+networks:
+    nginxcore:
+        driver: power-driver-1
+        name: rede-nginx-reverso
+        external: true

@@ -7,7 +7,7 @@ from config import email, senha
 app = Flask(__name__)
 app.secret_key = 'kasjkkdjaskjdajiuqwieuqwjeqkejnknncnxxxxxxxxxiiiiiiososaa1234444#'
 
-app.config['DEBUG'] = True
+app.config['DEBUG'] = False
 
 mail_settings = {
     "MAIL_SERVER": 'smtp.gmail.com',
