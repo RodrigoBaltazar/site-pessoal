@@ -5,7 +5,7 @@ sys.path.append('./')
 from config import email, senha
 
 app = Flask(__name__)
-app.secret_key = 'lembrardebotarnoenvkasjkkdjaskjdajiuqwieuqwjeqkejnknncnxxxxxxxxxiiiiiiososaa1234444#'
+app.secret_key = 'lembrardebotarnoenvakasjkkdjaskjdajiuqwieuqwjeqkejnknncnxxxxxxxxxiiiiiiososaa1234444#'
 
 app.config['DEBUG'] = False
 
