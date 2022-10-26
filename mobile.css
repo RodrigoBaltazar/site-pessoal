@@ -1,0 +1,31 @@
+/* Iphone 12 pro */
+/* TODO */
+@media screen and (min-width: 390px) and (max-width: 844px) {
+    
+    .burguer-menu {
+        display: block;
+        margin-left: 80%;
+        margin-top: 10px;
+        padding-top: 3px;
+    }
+    
+    nav ul li {
+        font-size: 12px;
+        display: inline-block;
+        margin-left: 4px;
+        display: none;
+        /* padding: 1px; */
+    }
+    
+    div {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+      }
+
+    ul {
+        margin-top: 6px;
+    }
+
+  }
