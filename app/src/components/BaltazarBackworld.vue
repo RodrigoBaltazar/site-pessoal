@@ -5,6 +5,9 @@
       <div class="avatar">
         <img src="../assets/img_avatar.png" alt="Avatar" class="avatar">   
       </div>
+      <div class="card">
+
+      </div>
     </div>
  </div>
 
@@ -23,12 +26,20 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-#background {
-    background-color: #222;
+body {
+  position: absolute;
 }
 
-#card {
+#background {
+    background-color: #222;
+    /* min-width: 100%;
+    min-height: 100%; */
+    padding: 1%;
+  }
 
+#card {
+  background-color: antiquewhite;
+  
 }
 
 .avatar {
