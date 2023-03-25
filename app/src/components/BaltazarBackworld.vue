@@ -3,11 +3,15 @@
     <div id="card">
       <h1>Full Stack Developer</h1>
       <div class="avatar">
-        <img src="../assets/img_avatar.png" alt="Avatar" class="avatar">   
+        <img src="../assets/foto.png" alt="Avatar" class="avatar">   
       </div>
       loreim ipsum
       <div class="buttons">
-        botões aqui
+        <i class="fa fa-github-square" aria-hidden="true"></i>
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        <i class="fa fa-futbol-o" aria-hidden="true"></i>
+        <i class="fa fa-briefcase" aria-hidden="true"></i>
+        <i class="fa fa-camera" aria-hidden="true"></i>
       </div>
     </div>
  </div>
@@ -38,7 +42,7 @@ body {
   }
 
 #card {
-  background-color: antiquewhite;
+  background-color: whitesmoke;
   
 }
 
