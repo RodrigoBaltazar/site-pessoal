@@ -5,8 +5,9 @@
       <div class="avatar">
         <img src="../assets/img_avatar.png" alt="Avatar" class="avatar">   
       </div>
-      <div class="card">
-
+      loreim ipsum
+      <div class="buttons">
+        botões aqui
       </div>
     </div>
  </div>
@@ -32,8 +33,7 @@ body {
 
 #background {
     background-color: #222;
-    /* min-width: 100%;
-    min-height: 100%; */
+    height: 900px;
     padding: 1%;
   }
 
@@ -42,10 +42,18 @@ body {
   
 }
 
+.buttons {
+  background-color: green;
+}
+
 .avatar {
-  vertical-align: middle;
+  /* vertical-align: middle;
   height: 50px;
+  border-radius: 50%; */
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
+  margin: 0 auto;
 }
 h3 {
   /* margin: 40px 0 0; */
