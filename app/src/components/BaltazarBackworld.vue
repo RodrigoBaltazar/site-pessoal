@@ -22,6 +22,9 @@
         <a href="https://www.instagram.com/rodrigobaltazar00/">
           <i class="fa fa-camera" aria-hidden="true"></i>
         </a>
+        <button id="modal">
+          <i class="fa fa-gear"></i>
+        </button>
       </div>
     </div>
  </div>
@@ -70,17 +73,7 @@ body {
   border-radius: 50%;
   margin: 0 auto;
 }
-h3 {
-  /* margin: 40px 0 0; */
-}
-ul {
-  /* list-style-type: none;
-  padding: 0; */
-}
-li {
-  /* display: inline-block;
-  margin: 0 10px; */
-}
+
 a {
   margin: 0 5%;
   color: #222;
