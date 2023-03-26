@@ -7,10 +7,10 @@
       </div>
       loreim ipsum
       <div class="buttons">
-        <a href="">
+        <a href="https://github.com/RodrigoBaltazar">
           <i class="fa fa-github-square" aria-hidden="true"></i>
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/rodrigo-baltazar-b7537a3a/">
           <i class="fa fa-linkedin-square" aria-hidden="true"></i>
         </a>
         <a href="">
@@ -19,7 +19,7 @@
         <a href="">
           <i class="fa fa-briefcase" aria-hidden="true"></i>
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/rodrigobaltazar00/">
           <i class="fa fa-camera" aria-hidden="true"></i>
         </a>
       </div>
