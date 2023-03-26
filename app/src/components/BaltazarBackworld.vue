@@ -7,11 +7,21 @@
       </div>
       loreim ipsum
       <div class="buttons">
-        <i class="fa fa-github-square" aria-hidden="true"></i>
-        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-        <i class="fa fa-futbol-o" aria-hidden="true"></i>
-        <i class="fa fa-briefcase" aria-hidden="true"></i>
-        <i class="fa fa-camera" aria-hidden="true"></i>
+        <a href="">
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-futbol-o" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-briefcase" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-camera" aria-hidden="true"></i>
+        </a>
       </div>
     </div>
  </div>
@@ -47,7 +57,8 @@ body {
 }
 
 .buttons {
-  background-color: green;
+  background-color: whitesmoke;
+  padding: 2%;
 }
 
 .avatar {
@@ -71,6 +82,7 @@ li {
   margin: 0 10px; */
 }
 a {
-  /* color: #42b983; */
+  margin: 0 5%;
+  color: #222;
 }
 </style>
