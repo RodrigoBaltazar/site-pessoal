@@ -81,8 +81,15 @@ body {
 
 #card {
   background-color: whitesmoke;
-  
+  width: auto;
 }
+
+@media screen and (min-width: 800px) {
+    #card {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+  }
 
 .buttons {
   background-color: whitesmoke;
