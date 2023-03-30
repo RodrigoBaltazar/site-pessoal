@@ -25,16 +25,18 @@
         <button @click="toggleVisibility">
           <i class="fa fa-gear"></i>
         </button>
-        <div ref="modal" class="modal" v-show="hidden">
-          <div ref="modal-content" class="modal-content">
-            <button @click="closeModal" class="close-btn">Fechar</button>
-            <h2>Especificações da Página</h2>
-            <p>Kbis: 000</p>
+          <div v-show="isVisible">
+            {{ isVisible ? '' : 'hidden' }}
+            <div ref="modal-content" class="modal-content">
+              <button @click="toggleVisibility" class="close-btn">Fechar</button>
+              <h2>Especificações da Página</h2>
+              <p>Kbis: 000</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
- </div>
+ <!-- </div> -->
 
 </template>
 
