@@ -84,6 +84,9 @@ body {
 #card {
   background-color: whitesmoke;
   width: auto;
+  border-radius: 0.5rem;
+  /* border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem; */
 }
 
 @media screen and (min-width: 800px) {
@@ -96,6 +99,7 @@ body {
 .buttons {
   background-color: whitesmoke;
   padding: 2%;
+  border-radius: 1000px;
 }
 
 .avatar {
@@ -128,7 +132,7 @@ a {
 
 .modal-content {
   position: absolute;
-  top: 50%;
+  top: 25.9%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
@@ -154,6 +158,7 @@ a {
   .modal-content {
     width: 70%;
     max-width: 40rem;
+    top: 24%;
   }
 }
 </style>
