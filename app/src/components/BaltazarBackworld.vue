@@ -13,6 +13,9 @@
         <a href="https://www.linkedin.com/in/rodrigo-baltazar-b7537a3a/">
           <i class="fa fa-linkedin-square" aria-hidden="true"></i>
         </a>
+        <a href="#">
+          <i class="fa fa-book" aria-hidden="true"></i>
+        </a>
         <a href="">
           <i class="fa fa-futbol-o" aria-hidden="true"></i>
         </a>
@@ -46,7 +49,7 @@
 export default {
   data() {
     return {
-      isVisible: true
+      isVisible: false
     };
   },
   name: 'BaltazarBackWorld',
