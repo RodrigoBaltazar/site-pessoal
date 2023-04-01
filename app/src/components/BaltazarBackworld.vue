@@ -11,22 +11,22 @@
       </p>
       <div class="buttons">
         <a href="https://github.com/RodrigoBaltazar">
-          <i class="fa fa-github-square" aria-hidden="true"></i>
+          <i class="fa fa-github-square" aria-hidden="true" title="Github"></i>
         </a>
         <a href="https://www.linkedin.com/in/rodrigo-baltazar-b7537a3a/">
           <i class="fa fa-linkedin-square" aria-hidden="true"></i>
         </a>
         <a href="#">
-          <i class="fa fa-book" aria-hidden="true"></i>
+          <i class="fa fa-book" aria-hidden="true" title="E-book"></i>
         </a>
         <a href="">
-          <i class="fa fa-futbol-o" aria-hidden="true"></i>
+          <i class="fa fa-futbol-o" aria-hidden="true" title="Futebol"></i>
         </a>
         <a href="">
-          <i class="fa fa-briefcase" aria-hidden="true"></i>
+          <i class="fa fa-briefcase" aria-hidden="true" title="Portfólio"></i>
         </a>
         <a href="https://www.instagram.com/rodrigobaltazar00/">
-          <i class="fa fa-camera" aria-hidden="true"></i>
+          <i class="fa fa-camera" aria-hidden="true" title="Instagram"></i>
         </a>
         <button @click="toggleVisibility">
           <i class="fa fa-gear"></i>
@@ -37,6 +37,7 @@
               <button @click="toggleVisibility" class="close-btn">Fechar</button>
               <h2>Especificações da Página</h2>
               <p>Kbis: 000</p>
+              <p>Ultima etapa é fazer a medição de performance</p>
             </div>
           </div>
         </div>
