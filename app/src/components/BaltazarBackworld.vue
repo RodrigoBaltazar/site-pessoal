@@ -5,7 +5,10 @@
       <div class="avatar">
         <img src="../assets/foto.png" alt="Avatar" class="avatar">   
       </div>
-      loreim ipsum
+      <p id="bio">
+        Rodrigo Baltazar é um profissional de TI com anos de experiência em resolução
+        de problemas envolvendo software.
+      </p>
       <div class="buttons">
         <a href="https://github.com/RodrigoBaltazar">
           <i class="fa fa-github-square" aria-hidden="true"></i>
@@ -88,8 +91,7 @@ body {
   background-color: whitesmoke;
   width: auto;
   border-radius: 0.5rem;
-  /* border-top-right-radius: 0.5rem;
-  border-top-left-radius: 0.5rem; */
+  font-size: 100%;
 }
 
 @media screen and (min-width: 800px) {
@@ -113,11 +115,17 @@ body {
   width: 100px;
   border-radius: 50%;
   margin: 0 auto;
+  margin-top: 2%;
 }
 
 a {
   margin: 0 5%;
   color: #222;
+}
+
+#bio {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 /* MODAL */
@@ -164,4 +172,6 @@ a {
     top: 24%;
   }
 }
+
+/* Fim do Modal */
 </style>

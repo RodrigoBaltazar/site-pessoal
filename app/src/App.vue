@@ -20,7 +20,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  /* margin-top: 60px; */
 }
   /* CSS reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
@@ -55,7 +54,7 @@ caption,th {
     text-align:left;
 }
 h1,h2,h3,h4,h5,h6 {
-    font-size:100%;
+    /* font-size:100%; */
     font-weight:normal;
 }
 q:before,q:after {
