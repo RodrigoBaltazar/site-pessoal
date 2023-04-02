@@ -14,10 +14,10 @@
           <i class="fa fa-github-square" aria-hidden="true" title="Github"></i>
         </a>
         <a href="https://www.linkedin.com/in/rodrigo-baltazar-b7537a3a/">
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          <i class="fa fa-linkedin-square" aria-hidden="true" title="LinkedIn"></i>
         </a>
         <a href="#">
-          <i class="fa fa-book" aria-hidden="true" title="E-book"></i>
+          <i class="fa fa-book" aria-hidden="true" title="E-Book"></i>
         </a>
         <a href="">
           <i class="fa fa-futbol-o" aria-hidden="true" title="Futebol"></i>
