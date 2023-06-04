@@ -31,7 +31,9 @@
         <button @click="toggleVisibility">
           <i class="fa fa-gear"></i>
         </button>
-          <div v-show="isVisible">
+        </div>
+      </div>
+      <div v-show="isVisible">
             {{ isVisible ? '' : 'hidden' }}
             <div ref="modal-content" class="modal-content">
               <button @click="toggleVisibility" class="close-btn">Fechar</button>
@@ -39,8 +41,6 @@
               <p>Kbis: 000</p>
               <p>Ultima etapa é fazer a medição de performance</p>
             </div>
-          </div>
-        </div>
       </div>
     </div>
  <!-- </div> -->
@@ -147,7 +147,7 @@ a {
   top: 25.9%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: whitesmoke;
   padding: 1rem;
   border-radius: 0.5rem;
   width: 90%;
@@ -165,12 +165,13 @@ a {
   cursor: pointer;
 }
 
+
 /* MODAL MOBILE */
-@media (min-width: 768px) {
+@media (min-width: 390px) {
   .modal-content {
     width: 70%;
     max-width: 40rem;
-    top: 24%;
+    margin-top: 33%;
   }
 }
 
