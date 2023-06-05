@@ -9,7 +9,7 @@
         Rodrigo Baltazar é um desenvolvedor de software full stack com 3 anos de experiência profissional.
       </p>
       <p id="bio">
-        Com um conhecimento abrangente de todo ciclo de desenvolvimento, demonstra capacidade de desenvolver e dar manutenção em aplicações.
+        Com um conhecimento abrangente de todo o ciclo de desenvolvimento, demonstra capacidade de desenvolver e dar manutenção em aplicações.
       </p>
       <p id="bio">
       Além disso, sua experiência em colaborar com equipes multidisciplinares e enfrentar desafios técnicos o tornam um profissional confiável e comprometido.
@@ -130,8 +130,8 @@ a {
 }
 
 #bio {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 /* MODAL */
