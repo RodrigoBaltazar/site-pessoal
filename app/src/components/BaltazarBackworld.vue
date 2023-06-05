@@ -6,8 +6,11 @@
         <img src="../assets/foto.png" alt="Avatar" class="avatar">   
       </div>
       <p id="bio">
-        Rodrigo Baltazar é um profissional de TI com anos de experiência em resolução
-        de problemas envolvendo software.
+      Rodrigo Baltazar é um desenvolvedor de software full stack com 3 anos de experiência profissional.
+
+Com um conhecimento abrangente de todo ciclo de desenvolvimento, demonstra capacidade de desenvolver e dar manutenção em aplicações.
+
+Além disso, sua experiência em colaborar com equipes multidisciplinares e enfrentar desafios técnicos o tornam um profissional confiável e comprometido.
       </p>
       <div class="buttons">
         <a href="https://github.com/RodrigoBaltazar">
