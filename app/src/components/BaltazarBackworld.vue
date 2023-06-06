@@ -5,15 +5,17 @@
       <div class="avatar">
         <img src="../assets/foto.png" alt="Avatar" class="avatar">   
       </div>
-      <p id="bio">
-        Rodrigo Baltazar é um desenvolvedor de software full stack com 3 anos de experiência profissional.
-      </p>
-      <p id="bio">
-        Com um conhecimento abrangente de todo o ciclo de desenvolvimento, demonstra capacidade de desenvolver e dar manutenção em aplicações.
-      </p>
-      <p id="bio">
-      Além disso, sua experiência em colaborar com equipes multidisciplinares e enfrentar desafios técnicos o tornam um profissional confiável e comprometido.
-      </p>
+      <div id="div-bio">
+        <p id="bio">
+          Rodrigo Baltazar é um desenvolvedor de software full stack com 3 anos de experiência profissional.
+        </p>
+        <p id="bio">
+          Com um conhecimento abrangente de todo o ciclo de desenvolvimento, demonstra capacidade de desenvolver e dar manutenção em aplicações.
+        </p>
+        <p id="bio">
+        Além disso, sua experiência em colaborar com equipes multidisciplinares e enfrentar desafios técnicos o tornam um profissional confiável e comprometido.
+        </p>
+      </div>  
       <div class="buttons">
         <a href="https://github.com/RodrigoBaltazar">
           <i class="fa fa-github-square" aria-hidden="true" title="Github"></i>
@@ -100,6 +102,10 @@ body {
   font-size: 100%;
 }
 
+#div-bio {
+  padding: 5%;
+}
+
 @media screen and (min-width: 800px) {
     #card {
         margin-left: 30%;
@@ -132,6 +138,7 @@ a {
 #bio {
   margin-top: 1%;
   margin-bottom: 1%;
+  text-align: center;
 }
 
 /* MODAL */
