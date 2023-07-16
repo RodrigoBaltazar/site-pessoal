@@ -1,17 +1,6 @@
 <template>
-  <BaltazarBackworld />
+  <router-view/>
 </template>
-
-<script>
-import BaltazarBackworld from './components/BaltazarBackworld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    BaltazarBackworld
-  }
-}
-</script>
 
 <style>
 #app {
@@ -62,5 +51,4 @@ q:before,q:after {
 }
 abbr,acronym { border:0;
 }
-
 </style>

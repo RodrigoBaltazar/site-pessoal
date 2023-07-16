@@ -35,6 +35,9 @@
         <a href="https://www.instagram.com/rodrigobaltazar00/">
           <i class="fa fa-camera" aria-hidden="true" title="Instagram"></i>
         </a>
+        <router-link to="/videos">
+          <i class="fa fa-file-video-o" aria-hidden="true"></i>
+        </router-link>
         <button @click="toggleVisibility">
           <i class="fa fa-gear"></i>
         </button>
@@ -131,6 +134,11 @@ body {
 }
 
 a {
+  margin: 0 5%;
+  color: #222;
+}
+
+router-link {
   margin: 0 5%;
   color: #222;
 }
