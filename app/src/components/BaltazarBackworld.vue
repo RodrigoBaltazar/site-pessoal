@@ -17,22 +17,22 @@
         </p>
       </div>  
       <div class="buttons">
-        <a href="https://github.com/RodrigoBaltazar">
+        <a href="https://github.com/RodrigoBaltazar" target="_blank">
           <i class="fa fa-github-square" aria-hidden="true" title="Github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/rodrigo-baltazar-b7537a3a/">
+        <a href="https://www.linkedin.com/in/rodrigo-baltazar-b7537a3a/" target="_blank">
           <i class="fa fa-linkedin-square" aria-hidden="true" title="LinkedIn"></i>
         </a>
-        <a href="#">
+        <a href="#" target="_blank">
           <i class="fa fa-book" aria-hidden="true" title="E-Book"></i>
         </a>
-        <a href="">
+        <a href="" target="_blank">
           <i class="fa fa-futbol-o" aria-hidden="true" title="Futebol"></i>
         </a>
-        <a href="">
+        <a href="" target="_blank">
           <i class="fa fa-briefcase" aria-hidden="true" title="Portfólio"></i>
         </a>
-        <a href="https://www.instagram.com/rodrigobaltazar00/">
+        <a href="https://www.instagram.com/rodrigobaltazar00/" target="_blank">
           <i class="fa fa-camera" aria-hidden="true" title="Instagram"></i>
         </a>
         <router-link to="/videos">
