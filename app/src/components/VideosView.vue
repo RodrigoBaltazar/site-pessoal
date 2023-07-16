@@ -35,7 +35,8 @@
 <style>
 
 .card {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  margin: 10px;
 }
 
 body {
