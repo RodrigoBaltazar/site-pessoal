@@ -43,7 +43,6 @@
         </button>
         </div>
       </div>
-      <!-- <div v-show="isVisible"> -->
       	   <div v-show="hidden">
             {{ isVisible ? '' : 'hidden' }}
             <div ref="modal-content" class="modal-content">
