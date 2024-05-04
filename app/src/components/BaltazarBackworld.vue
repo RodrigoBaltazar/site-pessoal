@@ -7,7 +7,7 @@
       </div>
       <div id="div-bio">
         <p id="bio">
-          Rodrigo Baltazar é um desenvolvedor de software full stack com 3 anos de experiência profissional.
+          Rodrigo Baltazar é um desenvolvedor de software full stack com 4 anos de experiência profissional.
         </p>
         <p id="bio">
           Com um conhecimento abrangente de todo o ciclo de desenvolvimento, demonstra capacidade de desenvolver e dar manutenção em aplicações.
@@ -26,7 +26,7 @@
         <a href="#" target="_blank">
           <i class="fa fa-book" aria-hidden="true" title="E-Book"></i>
         </a>
-        <a href="" target="_blank">
+        <a href="https://www.mmsfutebol.com" target="_blank">
           <i class="fa fa-futbol-o" aria-hidden="true" title="Futebol"></i>
         </a>
         <a href="" target="_blank">
@@ -43,7 +43,8 @@
         </button>
         </div>
       </div>
-      <div v-show="isVisible">
+      <!-- <div v-show="isVisible"> -->
+      	   <div v-show="hidden">
             {{ isVisible ? '' : 'hidden' }}
             <div ref="modal-content" class="modal-content">
               <button @click="toggleVisibility" class="close-btn">Fechar</button>
