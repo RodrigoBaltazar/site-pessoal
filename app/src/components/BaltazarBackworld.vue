@@ -43,8 +43,8 @@
         </button>
         </div>
       </div>
-      	   <div v-show="hidden">
-            {{ isVisible ? '' : 'hidden' }}
+      <div v-show="hidden">
+        {{ isVisible ? '' : 'hidden' }}
             <div ref="modal-content" class="modal-content">
               <button @click="toggleVisibility" class="close-btn">Fechar</button>
               <h2>Especificações da Página</h2>
@@ -53,7 +53,6 @@
             </div>
       </div>
     </div>
- <!-- </div> -->
 
 </template>
 
