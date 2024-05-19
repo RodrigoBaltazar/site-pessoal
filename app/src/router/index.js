@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import BaltazarBackworld from '../components/BaltazarBackworld.vue'
 import VideosView from '../components/VideosView.vue'
-
+import TecnicoInformatica from '../components/TecnicoInformatica.vue'
 const routes = [
   {
     path: '/',
@@ -16,6 +16,11 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     // component: () => import(/* webpackChunkName: "about" */ '../components/VideosView.vue')
+  },
+  {
+   path: '/tecnico-informatica',
+   name: 'videos',
+   component: TecnicoInformatica
   }
 ]
 
