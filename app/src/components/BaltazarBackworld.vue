@@ -29,8 +29,8 @@
         <a href="https://www.mmsfutebol.com" target="_blank">
           <i class="fa fa-futbol-o" aria-hidden="true" title="Futebol"></i>
         </a>
-        <a href="" target="_blank">
-          <i class="fa fa-briefcase" aria-hidden="true" title="Portfólio"></i>
+        <a href="https://rodrigobaltazar.com.br/tecnico-informatica" target="_blank">
+          <i class="fa fa-briefcase" aria-hidden="true" title="Técnico em Informática"></i>
         </a>
         <a href="https://www.instagram.com/rodrigobaltazar00/" target="_blank">
           <i class="fa fa-camera" aria-hidden="true" title="Instagram"></i>

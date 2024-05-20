@@ -106,20 +106,26 @@
        .footy {
 	background: #006699 !important;
 	}
+        #contato {
+            margin-top: 2%;
+        }
+        #exemplos {
+            margin-bottom: 2%;
+        }
     </style>
 
 <template>
     <header>
         <nav class="container-fluid navbar navbar-expand-lg auto d-flex justify-content-center align-items-center" style="margin: 0 auto">
             <div class="">
-                <a class="navbar-brand" href="#" style="color: white">Técnico em Informática</a>
+                <a class="navbar-brand" href="#" style="color: white">Técnico em Informática - Baltazar Soluciona</a>
             </div>
         </nav>
     </header>
 
     <main>
         <h1 class="text-center" style="font-size: 45px; margin-bottom:30px">Consertos em Geral para T.I</h1>
-
+        <h2 id="exemplos">Exemplos:</h2>
         <ul class="text-center " style="list-style: none; padding: 0 15px;">
             <li><i class="fa-solid fa-check"></i> Problemas de Hardware (não liga, peças com defeito).</li>
             <li><i class="fa-solid fa-check"></i> Problemas com Windows, Linux ou Macos.</li>
@@ -127,7 +133,7 @@
             <li><i class="fa-solid fa-check"></i> Lentidão.</li>
             <li><i class="fa-solid fa-check"></i> Upgrade.</li>
             <li><i class="fa-solid fa-check"></i> Escolha de peças para escritório ou pc gamer.</li>
-            <li><i class="fa-solid fa-check"></i> Resolvo apenas no local, não levo equipamentos para o laboratório.</li>
+            <li><i class="fa-solid fa-check"></i> Resolvo apenas no local, não retiro equipamentos do local.</li>
         </ul>
     </main>
 
@@ -143,7 +149,8 @@
     </section>
 
     <section class="text-center" style="margin-bottom: 50px;">
-        <h2>
+        <h1>Contato:</h1>
+        <h2 id="contato">
             Clique aqui para me chamar no WhatsApp!
         </h2>
         <div class="d-flex justify-content-center align-items-center">
