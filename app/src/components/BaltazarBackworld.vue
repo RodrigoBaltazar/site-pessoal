@@ -23,8 +23,8 @@
         <a href="https://www.linkedin.com/in/rodrigo-baltazar-b7537a3a/" target="_blank">
           <i class="fa fa-linkedin-square" aria-hidden="true" title="LinkedIn"></i>
         </a>
-        <a href="#" target="_blank">
-          <i class="fa fa-book" aria-hidden="true" title="E-Book"></i>
+        <a href="https://blog.rodrigobaltazar.com.br" target="_blank">
+          <i class="fa fa-book" aria-hidden="true" title="Blog"></i>
         </a>
         <a href="https://www.mmsfutebol.com" target="_blank">
           <i class="fa fa-futbol-o" aria-hidden="true" title="Futebol"></i>
