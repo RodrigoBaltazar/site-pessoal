@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import BaltazarBackworld from '../components/BaltazarBackworld.vue'
 import VideosView from '../components/VideosView.vue'
 import TecnicoInformatica from '../components/TecnicoInformatica.vue'
+import HorasProgramacao from '../components/HorasProgramacao.vue'
 const routes = [
   {
     path: '/',
@@ -19,9 +20,14 @@ const routes = [
   },
   {
    path: '/tecnico-informatica',
-   name: 'videos',
+   name: 'tecnico',
    component: TecnicoInformatica
-  }
+  },
+  {
+    path: '/horas',
+    name: 'horas',
+    component: HorasProgramacao
+   }
 ]
 
 const router = createRouter({
