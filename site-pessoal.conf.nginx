@@ -1,0 +1,29 @@
+server {
+    listen 80;
+    server_name www.rodrigobaltazar.com.br rodrigobaltazar.com.br;
+
+    # Diretório raiz do Vue compilado
+    root /var/www/site-pessoal/dist;
+    index index.html;
+
+    # Rota específica para a API
+    location /api/email {
+        # Internamente, redireciona para o arquivo PHP real
+        internal;
+        alias /var/www/site-pessoal/api/send-email.php;
+        
+        fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $request_filename;
+    }
+
+    # Endpoint público que será usado pelo frontend
+    location /send-email {
+        rewrite ^/send-email$ /api/email last;
+    }
+
+    # Configuração para o Vue Router
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}
