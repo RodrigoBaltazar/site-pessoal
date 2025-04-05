@@ -1,3 +1,9 @@
+### 05/04/2025
+
+    E o backlog vai crescendo...
+
+    [] - Terminar página do técnico em informática.
+
 ### 01/04/2025
 
     [] - Ver no github questão da página do técnico em informática.
