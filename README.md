@@ -55,3 +55,12 @@ Para personalizar o portfolio, edite os seguintes arquivos:
 ├── tailwind.config.js # Configuração do Tailwind
 └── postcss.config.js  # Configuração do PostCSS
 ```
+
+## Automatização
+
+### Em produção
+$ cd ~/prog/site-pessoal
+$ npm run build
+$ sudo cp -r dist/ /var/www/html/site-pessoal/
+$ sudo cp -r api/ /var/www/html/site-pessoal/
+$ sudo systemctl restart nginx
