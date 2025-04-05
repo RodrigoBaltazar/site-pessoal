@@ -19,7 +19,7 @@ const description = ref('')
             {{ name }}
           </router-link>
           <div class="space-x-4">
-            <a href="#sobre" class="text-gray-600 hover:text-gray-900">Sobre</a>
+            <a href="/Sobre" class="text-gray-600 hover:text-gray-900">Sobre</a>
             <a href="#projetos" class="text-gray-600 hover:text-gray-900">Projetos</a>
             <a href="/contato" class="text-gray-600 hover:text-gray-900">Contato</a>
           </div>

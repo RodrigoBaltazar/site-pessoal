@@ -25,6 +25,9 @@ const otherWorks = ref([
       <a href="#projetos" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700">
         Ver Projetos
       </a>
+      <router-link to="/sobre" class="bg-gray-200 text-gray-800 px-6 py-2 rounded-md hover:bg-gray-300">
+        Sobre
+      </router-link>
       <router-link to="/contato" class="bg-gray-200 text-gray-800 px-6 py-2 rounded-md hover:bg-gray-300">
         Contato
       </router-link>
