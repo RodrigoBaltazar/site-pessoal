@@ -2,11 +2,11 @@
 
     E o backlog vai crescendo...
 
-    [] - Terminar página do técnico em informática.
+    [x] - Terminar página do técnico em informática.
 
 ### 01/04/2025
 
-    [] - Ver no github questão da página do técnico em informática.
+    [x] - Ver no github questão da página do técnico em informática.
         -> Dica: Encontrar na prod da magalu uns resquicíos.
     [] - Colocar no read.me como atualizar servidor de prod do site-pessoal.
             # Na VPS

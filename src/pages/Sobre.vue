@@ -11,7 +11,7 @@ const experiences = ref([
   {
     period: '2020 - Presente',
     title: 'Desenvolvedor Full Stack',
-    description: 'Desenvolvimento de aplicações web modernas utilizando Vue.js e Node.js',
+    description: 'Rodrigo Baltazar é um desenvolvedor de software com 5 anos de experiência em PHP, Laravel, PostgreSQL, HTML, CSS e JavaScript. Com conhecimento em infraestrutura, já atuou como sysadmin e gerencia sua própria VPS para projetos pessoais.',
     link: '/projetos',
     linkText: 'Ver projetos relacionados →'
   },
