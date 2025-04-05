@@ -11,12 +11,16 @@ const experiences = ref([
   {
     period: '2020 - Presente',
     title: 'Desenvolvedor Full Stack',
-    description: 'Desenvolvimento de aplicações web modernas utilizando Vue.js e Node.js'
+    description: 'Desenvolvimento de aplicações web modernas utilizando Vue.js e Node.js',
+    link: '/projetos',
+    linkText: 'Ver projetos relacionados →'
   },
   {
     period: '2003 - Presente',
     title: 'Técnico de Informática',
-    description: 'Prestação de serviços técnicos em hardware e software, com foco em soluções personalizadas'
+    description: 'Prestação de serviços técnicos em hardware e software, com foco em soluções personalizadas',
+    link: '/tecnico-informatica',
+    linkText: 'Ver serviços técnicos →'
   }
 ])
 </script>
@@ -63,7 +67,10 @@ const experiences = ref([
             <h3 class="text-xl font-semibold text-gray-800">{{ exp.title }}</h3>
             <span class="text-sm text-gray-500">{{ exp.period }}</span>
           </div>
-          <p class="text-gray-600">{{ exp.description }}</p>
+          <p class="text-gray-600 mb-4">{{ exp.description }}</p>
+          <a v-if="exp.link" :href="exp.link" class="text-blue-600 hover:text-blue-800 text-sm font-medium">
+            {{ exp.linkText }}
+          </a>
         </div>
       </div>
     </section>
