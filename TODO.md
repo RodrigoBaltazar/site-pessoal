@@ -1,3 +1,8 @@
+### 06/04/2025
+    E o backlog vai diminuindo...
+
+    [x] - Colocar google analytics no site pessoal
+
 ### 05/04/2025
 
     E o backlog vai crescendo...
@@ -8,7 +13,7 @@
 
     [x] - Ver no github questão da página do técnico em informática.
         -> Dica: Encontrar na prod da magalu uns resquicíos.
-    [] - Colocar no read.me como atualizar servidor de prod do site-pessoal.
+    [x] - Colocar no read.me como atualizar servidor de prod do site-pessoal.
             # Na VPS
                 cd /caminho/do/repositorio
                 git pull
