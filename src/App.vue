@@ -1,9 +1,29 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
 
 const name = ref('Rodrigo Baltazar')
 const title = ref('Desenvolvedor Full Stack')
 const description = ref('')
+const route = useRoute()
+
+// Rastrear mudanças de rota
+watch(() => route.path, (newPath) => {
+  if (window.gtag) {
+    window.gtag('event', 'page_view', {
+      page_path: newPath
+    })
+  }
+})
+
+// Rastrear visualização inicial
+onMounted(() => {
+  if (window.gtag) {
+    window.gtag('event', 'page_view', {
+      page_path: route.path
+    })
+  }
+})
 </script>
 
 <template>
@@ -19,9 +39,9 @@ const description = ref('')
             {{ name }}
           </router-link>
           <div class="space-x-4">
-            <a href="/Sobre" class="text-gray-600 hover:text-gray-900">Sobre</a>
+            <router-link to="/sobre" class="text-gray-600 hover:text-gray-900">Sobre</router-link>
             <a href="#projetos" class="text-gray-600 hover:text-gray-900">Projetos</a>
-            <a href="/contato" class="text-gray-600 hover:text-gray-900">Contato</a>
+            <router-link to="/contato" class="text-gray-600 hover:text-gray-900">Contato</router-link>
           </div>
         </div>
       </nav>
