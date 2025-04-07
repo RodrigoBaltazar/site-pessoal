@@ -28,6 +28,24 @@ const projects = ref([
     status: 'Em desenvolvimento',
     link: '#',
     category: 'web'
+  },
+  {
+    title: 'Website pessoal',
+    description: 'Website pessoal.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Linux', 'Vue.js', 'BASH', 'Nginx', 'Automatizações'],
+    image: '/projects/clinic.jpg',
+    status: 'Em desenvolvimento',
+    link: '#',
+    category: 'all'
+  },
+  {
+    title: 'Fronteiras da Ciência - UFRGS',
+    description: 'Instalação e reparação de bugs no template Wordpress do site Fronteiras da Ciência - UFRGS.',
+    technologies: ['Wordpress', 'CPD', 'Liderança'],
+    image: '/projects/clinic.jpg',
+    status: 'Concluído',
+    link: '#',
+    category: 'all'
   }
 ])
 
