@@ -34,17 +34,17 @@ const projects = ref([
     description: 'Website pessoal.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Linux', 'Vue.js', 'BASH', 'Nginx', 'Automatizações'],
     image: '/projects/clinic.jpg',
-    status: 'Em desenvolvimento',
-    link: '#',
+    status: 'Concluído',
+    link: 'https://www.rodrigobaltazar.com.br',
     category: 'all'
   },
   {
     title: 'Fronteiras da Ciência - UFRGS',
     description: 'Instalação e reparação de bugs no template Wordpress do site Fronteiras da Ciência - UFRGS.',
-    technologies: ['Wordpress', 'CPD', 'Liderança'],
-    image: '/projects/clinic.jpg',
+    technologies: ['Wordpress', 'CPD', 'Liderança', 'Responsividade', 'Migração'],
+    image: '/projects/front.jpg',
     status: 'Concluído',
-    link: '#',
+    link: 'https://www.ufrgs.br/frontdaciencia/',
     category: 'all'
   }
 ])
@@ -168,6 +168,13 @@ const filteredProjects = computed(() => {
 <style scoped>
 .project-card {
   transition: transform 0.2s;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .project-card:hover {
