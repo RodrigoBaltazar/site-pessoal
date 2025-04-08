@@ -1,3 +1,7 @@
+### 08/04/2025
+
+    [] - Fazer o /projetos ficar responsivo
+
 ### 06/04/2025
     E o backlog vai diminuindo...
 
