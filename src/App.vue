@@ -40,7 +40,7 @@ onMounted(() => {
           </router-link>
           <div class="space-x-4">
             <router-link to="/sobre" class="text-gray-600 hover:text-gray-900">Sobre</router-link>
-            <a href="#projetos" class="text-gray-600 hover:text-gray-900">Projetos</a>
+            <a href="/projetos" class="text-gray-600 hover:text-gray-900">Projetos</a>
             <router-link to="/contato" class="text-gray-600 hover:text-gray-900">Contato</router-link>
           </div>
         </div>
