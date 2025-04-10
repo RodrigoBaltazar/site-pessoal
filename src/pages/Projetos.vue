@@ -65,23 +65,25 @@ const filteredProjects = computed(() => {
 </script>
 
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <!-- Cabeçalho -->
-    <div class="text-center mb-16">
-      <h1 class="text-4xl font-bold text-gray-900 mb-4">Meus Projetos</h1>
-      <p class="text-xl text-gray-600">
-        Uma seleção dos projetos que desenvolvi e estou desenvolvendo
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-12">
+    <!-- Cabeçalho Responsivo -->
+    <div class="text-center mb-8 sm:mb-16">
+      <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2 sm:mb-4">
+        Meus Projetos
+      </h1>
+      <p class="text-base sm:text-xl text-gray-600">
+        Uma seleção dos projetos que desenvolvi ou estou desenvolvendo
       </p>
     </div>
 
-    <!-- Filtros -->
-    <div class="flex justify-center space-x-4 mb-12">
+    <!-- Filtros Responsivos -->
+    <div class="flex flex-wrap justify-center gap-2 sm:space-x-4 mb-8 sm:mb-12">
       <button
         v-for="category in categories"
         :key="category.id"
         @click="activeCategory = category.id"
         :class="[
-          'px-4 py-2 rounded-md transition-colors duration-200',
+          'px-3 sm:px-4 py-2 rounded-md transition-colors duration-200 text-sm sm:text-base w-full sm:w-auto mb-2 sm:mb-0',
           activeCategory === category.id
             ? 'bg-blue-600 text-white'
             : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
@@ -91,24 +93,24 @@ const filteredProjects = computed(() => {
       </button>
     </div>
 
-    <!-- Grid de Projetos -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Grid de Projetos Responsivo -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
       <div
         v-for="project in filteredProjects"
         :key="project.title"
         class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-200"
       >
-        <!-- Imagem do Projeto -->
-        <div class="relative h-48 bg-gray-200">
+        <!-- Imagem do Projeto Responsiva -->
+        <div class="relative h-40 sm:h-48 bg-gray-200">
           <img
             :src="project.image"
             :alt="project.title"
-            class="w-full h-full object-cover"
+            class="w-full h-full object-contain"
           />
-          <div class="absolute top-4 right-4">
+          <div class="absolute top-2 right-2 sm:top-4 sm:right-4">
             <span
               :class="[
-                'px-3 py-1 rounded-full text-sm font-medium',
+                'px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium',
                 project.status === 'Concluído'
                   ? 'bg-green-100 text-green-800'
                   : project.status === 'Em desenvolvimento'
@@ -121,32 +123,32 @@ const filteredProjects = computed(() => {
           </div>
         </div>
 
-        <!-- Conteúdo do Projeto -->
-        <div class="p-6">
-          <h3 class="text-xl font-semibold text-gray-900 mb-2">
+        <!-- Conteúdo do Projeto Responsivo -->
+        <div class="p-4 sm:p-6">
+          <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
             {{ project.title }}
           </h3>
-          <p class="text-gray-600 mb-4">{{ project.description }}</p>
+          <p class="text-sm sm:text-base text-gray-600 mb-4">{{ project.description }}</p>
 
-          <!-- Tecnologias -->
-          <div class="flex flex-wrap gap-2 mb-4">
+          <!-- Tecnologias Responsivas -->
+          <div class="flex flex-wrap gap-1 sm:gap-2 mb-4">
             <span
               v-for="tech in project.technologies"
               :key="tech"
-              class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
+              class="bg-gray-100 text-gray-700 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
             >
               {{ tech }}
             </span>
           </div>
 
-          <!-- Link do Projeto -->
+          <!-- Link do Projeto Responsivo -->
           <a
             :href="project.link"
-            class="inline-flex items-center text-blue-600 hover:text-blue-800"
+            class="inline-flex items-center text-sm sm:text-base text-blue-600 hover:text-blue-800"
           >
             Ver projeto
             <svg
-              class="w-4 h-4 ml-2"
+              class="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
