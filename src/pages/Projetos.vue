@@ -33,7 +33,7 @@ const projects = ref([
     title: 'Website pessoal',
     description: 'Website pessoal.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Linux', 'Vue.js', 'BASH', 'Nginx', 'Automatizações'],
-    image: '/projects/clinic.jpg',
+    image: '/projects/rodrigo.png',
     status: 'Concluído',
     link: 'https://www.rodrigobaltazar.com.br',
     category: 'all'
