@@ -34,7 +34,7 @@ const projects = ref([
     description: 'Plataforma de Feed de vídeos de futebol com CRUD, rolagem infinita e busca de vídeos de um canal específico do Youtube.',
     technologies: ['Laravel', 'Blade', 'PostgreSQL', 'Digital Ocean', 'HTML', 'CSS', 'JavaScript', 'Linux'],
     image: '/projects/ecommerce.jpg',
-    status: 'Em desenvolvimento',
+    status: 'Descontinuado',
     link: '#',
     category: 'web'
   },
@@ -42,9 +42,9 @@ const projects = ref([
     title: 'Site para caminhoneiro autonomo',
     description: 'Website para divulgação de serviços de um caminhoneiro autônomo com informações sobre o veiculo, localização e contato.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Linux'],
-    image: '/projects/clinic.jpg',
-    status: 'Em desenvolvimento',
-    link: '#',
+    image: '/projects/claudio-desc.jpg',
+    status: 'Descontinuado',
+    link: 'https://github.com/RodrigoBaltazar/claudioBaltazar-website',
     category: 'web'
   }
 ])
@@ -136,7 +136,11 @@ const filteredProjects = computed(() => {
                 'inline-flex items-center px-3 py-1.5 rounded-full font-medium text-sm',
                 project.status === 'Concluído'
                   ? 'bg-green-100 text-green-700 border border-green-200'
-                  : 'bg-yellow-100 text-yellow-700 border border-yellow-200'
+                  : project.status === 'Em desenvolvimento'
+                  ? 'bg-yellow-100 text-yellow-700 border border-yellow-200'
+                  : project.status === 'Descontinuado'
+                  ? 'bg-red-100 text-red-700 border border-red-200'
+                  : 'bg-gray-100 text-gray-700 border border-gray-200'
               ]"
             >
               <!-- Ícone de status -->
@@ -155,7 +159,7 @@ const filteredProjects = computed(() => {
                 />
               </svg>
               <svg
-                v-else
+                v-else-if="project.status === 'Em desenvolvimento'"
                 class="w-4 h-4 mr-2"
                 fill="none"
                 stroke="currentColor"
@@ -166,6 +170,20 @@ const filteredProjects = computed(() => {
                   stroke-linejoin="round"
                   stroke-width="2"
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <svg
+                v-else
+                class="w-4 h-4 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
               {{ project.status }}
