@@ -1,6 +1,11 @@
+### 24/04/2025
+
+    [x] - Adicionado mais projeto da confeitaria
+    [] - Mudar tags em desenvolvimento/concluído/etc para deixar melhor
+
 ### 08/04/2025
 
-    [] - Fazer o /projetos ficar responsivo
+    [x] - Fazer o /projetos ficar responsivo
 
 ### 06/04/2025
     E o backlog vai diminuindo...

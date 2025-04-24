@@ -98,69 +98,99 @@ const filteredProjects = computed(() => {
       <div
         v-for="project in filteredProjects"
         :key="project.title"
-        class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-200"
+        class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-200 flex flex-col"
       >
-        <!-- Imagem do Projeto Responsiva -->
-        <div class="relative h-40 sm:h-48 bg-gray-200">
+        <!-- Imagem do Projeto -->
+        <div class="relative h-[200px] sm:h-[250px] bg-gray-200">
           <img
             :src="project.image"
             :alt="project.title"
             class="w-full h-full object-contain"
           />
-          <div class="absolute top-2 right-2 sm:top-4 sm:right-4">
-            <span
-              :class="[
-                'px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium',
-                project.status === 'Concluído'
-                  ? 'bg-green-100 text-green-800'
-                  : project.status === 'Em desenvolvimento'
-                  ? 'bg-yellow-100 text-yellow-800'
-                  : 'bg-blue-100 text-blue-800'
-              ]"
-            >
-              {{ project.status }}
-            </span>
-          </div>
         </div>
 
-        <!-- Conteúdo do Projeto Responsivo -->
-        <div class="p-4 sm:p-6">
-          <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
-            {{ project.title }}
-          </h3>
-          <p class="text-sm sm:text-base text-gray-600 mb-4">{{ project.description }}</p>
+        <!-- Conteúdo do Card -->
+        <div class="p-4 sm:p-6 flex flex-col flex-grow">
+          <div class="flex-grow">
+            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
+              {{ project.title }}
+            </h3>
+            <p class="text-sm sm:text-base text-gray-600 mb-4">{{ project.description }}</p>
 
-          <!-- Tecnologias Responsivas -->
-          <div class="flex flex-wrap gap-1 sm:gap-2 mb-4">
-            <span
-              v-for="tech in project.technologies"
-              :key="tech"
-              class="bg-gray-100 text-gray-700 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
-            >
-              {{ tech }}
-            </span>
+            <!-- Tecnologias -->
+            <div class="flex flex-wrap gap-1 sm:gap-2 mb-4">
+              <span
+                v-for="tech in project.technologies"
+                :key="tech"
+                class="bg-gray-100 text-gray-700 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm"
+              >
+                {{ tech }}
+              </span>
+            </div>
           </div>
 
-          <!-- Link do Projeto Responsivo -->
-          <a
-            :href="project.link"
-            class="inline-flex items-center text-sm sm:text-base text-blue-600 hover:text-blue-800"
-          >
-            Ver projeto
-            <svg
-              class="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          <!-- Status e Link sempre no final -->
+          <div class="flex items-center justify-between pt-4 border-t">
+            <span
+              :class="[
+                'inline-flex items-center px-3 py-1.5 rounded-full font-medium text-sm',
+                project.status === 'Concluído'
+                  ? 'bg-green-100 text-green-700 border border-green-200'
+                  : 'bg-yellow-100 text-yellow-700 border border-yellow-200'
+              ]"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              />
-            </svg>
-          </a>
+              <!-- Ícone de status -->
+              <svg
+                v-if="project.status === 'Concluído'"
+                class="w-4 h-4 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <svg
+                v-else
+                class="w-4 h-4 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              {{ project.status }}
+            </span>
+
+            <a
+              :href="project.link"
+              class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800"
+            >
+              Ver projeto
+              <svg
+                class="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
