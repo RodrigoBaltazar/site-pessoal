@@ -3,10 +3,28 @@ import { ref, computed } from 'vue'
 
 const projects = ref([
   {
-    title: 'Vitrine E-commerce Woocommerce com Wordpress',
-    description: 'Sistema de vitrine utilizando Woocommerce para uma micro confeitaria artesanal.',
-    technologies: ['VPS', 'Wordpress', 'WooCommerce', 'Docker', 'Linux'],
-    image: '/projects/erp.jpg',
+    title: 'Website pessoal',
+    description: 'Website pessoal.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Linux', 'Vue.js', 'BASH', 'Nginx', 'Automatizações'],
+    image: '/projects/rodrigo.jpeg',
+    status: 'Concluído',
+    link: 'https://www.rodrigobaltazar.com.br',
+    category: 'all'
+  },
+  {
+    title: 'Fronteiras da Ciência - UFRGS',
+    description: 'Instalação e reparação de bugs no template Wordpress do site Fronteiras da Ciência - UFRGS.',
+    technologies: ['Wordpress', 'CPD', 'Liderança', 'Responsividade', 'Migração'],
+    image: '/projects/front.jpg',
+    status: 'Concluído',
+    link: 'https://www.ufrgs.br/frontdaciencia/',
+    category: 'all'
+  },
+  {
+    title: 'Vitrine E-commerce',
+    description: 'Sistema de vitrine para uma micro confeitaria artesanal.',
+    technologies: ['VPS', 'HTML','CSS','Javascript', 'Nginx', 'Docker', 'Linux'],
+    image: '/projects/confeitaria.png',
     status: 'Em desenvolvimento',
     link: '#',
     category: 'web'
@@ -28,24 +46,6 @@ const projects = ref([
     status: 'Em desenvolvimento',
     link: '#',
     category: 'web'
-  },
-  {
-    title: 'Website pessoal',
-    description: 'Website pessoal.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Linux', 'Vue.js', 'BASH', 'Nginx', 'Automatizações'],
-    image: '/projects/rodrigo.jpeg',
-    status: 'Concluído',
-    link: 'https://www.rodrigobaltazar.com.br',
-    category: 'all'
-  },
-  {
-    title: 'Fronteiras da Ciência - UFRGS',
-    description: 'Instalação e reparação de bugs no template Wordpress do site Fronteiras da Ciência - UFRGS.',
-    technologies: ['Wordpress', 'CPD', 'Liderança', 'Responsividade', 'Migração'],
-    image: '/projects/front.jpg',
-    status: 'Concluído',
-    link: 'https://www.ufrgs.br/frontdaciencia/',
-    category: 'all'
   }
 ])
 
