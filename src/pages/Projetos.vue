@@ -8,7 +8,7 @@ const projects = ref([
     technologies: ['HTML', 'CSS', 'JavaScript', 'Linux', 'Vue.js', 'BASH', 'Nginx', 'Automatizações'],
     image: '/projects/rodrigo.jpeg',
     status: 'Concluído',
-    link: 'https://www.rodrigobaltazar.com.br',
+    link: 'https://www.rodrigobaltazar.com.br/tecnico-informatica',
     category: 'all'
   },
   {
@@ -27,7 +27,7 @@ const projects = ref([
     image: '/projects/confeitaria.png',
     status: 'Em desenvolvimento',
     link: '#',
-    category: 'web'
+    category: 'all'
   },
   {
     title: 'Feed de vídeos de futebol',
@@ -36,7 +36,7 @@ const projects = ref([
     image: '/projects/ecommerce.jpg',
     status: 'Descontinuado',
     link: '#',
-    category: 'web'
+    category: 'all'
   },
   {
     title: 'Site para caminhoneiro autonomo',
@@ -45,15 +45,12 @@ const projects = ref([
     image: '/projects/claudio-desc.jpg',
     status: 'Descontinuado',
     link: 'https://github.com/RodrigoBaltazar/claudioBaltazar-website',
-    category: 'web'
+    category: 'all'
   }
 ])
 
 const categories = ref([
-  { id: 'all', name: 'Todos' },
-  { id: 'web', name: 'Web' },
-  { id: 'mobile', name: 'Mobile' },
-  { id: 'desktop', name: 'Desktop' }
+  // { id: 'all', name: 'Todos' }
 ])
 
 const activeCategory = ref('all')

@@ -1,7 +1,11 @@
+### 28/04/2025
+
+    [] - Remover da sessão de projetos, WEB, MOBILE e DESKTOP
+
 ### 24/04/2025
 
     [x] - Adicionado mais projeto da confeitaria
-    [] - Mudar tags em desenvolvimento/concluído/etc para deixar melhor
+    [x] - Mudar tags em desenvolvimento/concluído/etc para deixar melhor
 
 ### 08/04/2025
 
