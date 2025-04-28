@@ -1,6 +1,6 @@
 ### 28/04/2025
 
-    [] - Remover da sessão de projetos, WEB, MOBILE e DESKTOP
+    [x] - Remover da sessão de projetos, WEB, MOBILE e DESKTOP
 
 ### 24/04/2025
 
