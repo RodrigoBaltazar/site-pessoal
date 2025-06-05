@@ -1,7 +1,8 @@
 ### 05/05/2025
 
-    [] - Colocar na aba tecnico-informatica as seguintes redes: Linkedin e Instagram
-
+    [x] - Colocar na aba tecnico-informatica as seguintes redes: Linkedin e Instagram
+    [x] - Alterar link do projeto nonanena
+    [] - 
 ### 28/04/2025
 
     [x] - Remover da sessão de projetos, WEB, MOBILE e DESKTOP

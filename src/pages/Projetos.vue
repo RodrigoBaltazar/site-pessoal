@@ -26,7 +26,7 @@ const projects = ref([
     technologies: ['VPS', 'HTML','CSS','Javascript', 'Nginx', 'Docker', 'Linux'],
     image: '/projects/confeitaria.png',
     status: 'Em desenvolvimento',
-    link: '#',
+    link: 'https://www.nonanena.com.br',
     category: 'all'
   },
   {
