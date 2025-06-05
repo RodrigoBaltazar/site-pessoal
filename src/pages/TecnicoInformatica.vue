@@ -13,7 +13,8 @@ const services = ref([
 
 const policies = ref([
   'Só é cobrado serviço se for resolvido',
-  'Não cobro visita'
+  'Não cobro visita',
+  'Ofereço orçamento gratuito'
 ])
 </script>
 
@@ -62,6 +63,27 @@ const policies = ref([
       <h2 class="text-2xl font-bold text-gray-800 mb-6">
         <span class="bg-blue-100 px-4 py-1 rounded-lg">Entre em Contato</span>
       </h2>
+      <!-- Redes Sociais -->
+      <div class="flex justify-center gap-8 mb-8">
+        <a
+          href="https://www.linkedin.com/in/rodrigo-baltazar-dev"
+          target="_blank"
+          rel="noopener"
+          class="text-blue-700 hover:text-blue-900 text-3xl transition-colors"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/rodrigobaltazar00"
+          target="_blank"
+          rel="noopener"
+          class="text-pink-600 hover:text-pink-800 text-3xl transition-colors"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
       <div class="space-y-6">
         <p class="text-gray-700">Clique no ícone abaixo para iniciar uma conversa no WhatsApp</p>
         <a href="https://wa.me/5551997232493" class="inline-block hover:opacity-80 transition-opacity">
