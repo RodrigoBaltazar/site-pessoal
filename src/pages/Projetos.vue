@@ -30,6 +30,15 @@ const projects = ref([
     category: 'all'
   },
   {
+    title: 'Mech-G Gcomp UFRGS',
+    description: 'O software MECH-Gcomp, desenvolvido pelo Grupo de Materiais Compósitos e Nanocompósitos (GCOMP) do LAPOL/UFRGS, visa proporcionar uma alternativa fácil, rápida e didática para o cálculo das propriedades mecânicas, térmicas e higroscópicas de materiais compósitos.',
+    technologies: ['VPS', 'HTML','CSS','Javascript', 'Nginx', 'Python', 'Linux', 'Ubuntu'],
+    image: '/projects/gcomp.png',
+    status: 'Concluído',
+    link: 'https://gcomp-srv01.nuvem.ufrgs.br/pt-br/',
+    category: 'all'
+  },
+  {
     title: 'Feed de vídeos de futebol',
     description: 'Plataforma de Feed de vídeos de futebol com CRUD, rolagem infinita e busca de vídeos de um canal específico do Youtube.',
     technologies: ['Laravel', 'Blade', 'PostgreSQL', 'Digital Ocean', 'HTML', 'CSS', 'JavaScript', 'Linux'],
