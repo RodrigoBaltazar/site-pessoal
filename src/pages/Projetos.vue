@@ -21,6 +21,15 @@ const projects = ref([
     category: 'all'
   },
   {
+    title: 'Nona Nena Ordem de Compra',
+    description: 'Sistema para ordem de compras de uma micro confeitaira',
+    technologies: ['VPS', 'HTML','CSS','Javascript', 'Nginx', 'Docker', 'Linux', 'PHP', 'SQLITE'],
+    image: '/projects/OrdemDeCompra.png',
+    status: 'Concluído',
+    link: 'https://www.oc.nonanena.com.br',
+    category: 'all'
+  },
+  {
     title: 'Vitrine E-commerce',
     description: 'Sistema de vitrine para uma micro confeitaria artesanal.',
     technologies: ['VPS', 'HTML','CSS','Javascript', 'Nginx', 'Docker', 'Linux'],
