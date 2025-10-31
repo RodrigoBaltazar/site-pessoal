@@ -3,8 +3,11 @@ import { ref } from 'vue'
 
 const services = ref([
   'Problemas de Hardware (não liga, peças com defeito)',
-  'Problemas com Windows, Linux ou Macos',
+  'Problemas com Windows, Linux ou macOS',
   'Instalação de Impressoras',
+  'Suporte técnico premium para quem não pode perder tempo.',
+  'Serviço técnico de alto padrão, confiabilidade e rapidez para empresas exigentes.',
+  'Assistência técnica especializada para quem quer qualidade e confiança.',
   'Lentidão',
   'Upgrade',
   'Escolha de peças para escritório ou pc gamer',
@@ -12,7 +15,7 @@ const services = ref([
 ])
 
 const policies = ref([
-  'Só é cobrado serviço se for resolvido',
+  'Só é cobrado o serviço se for resolvido',
   'Não cobro visita',
   'Ofereço orçamento gratuito'
 ])
