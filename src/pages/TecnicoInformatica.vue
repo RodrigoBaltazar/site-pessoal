@@ -27,10 +27,10 @@ const policies = ref([
     <div class="text-center mb-16">
       <h1 class="text-4xl font-bold text-gray-900 mb-4">Técnico em Informática</h1>
       <p class="text-xl text-gray-600">
-        Serviços técnicos profissionais com mais de 20 anos de experiência
-      </p>
-        <p class="text-xl text-gray-600">
         Suporte técnico premium para empresas e profissionais que exigem excelência.
+      </p>
+      <p class="text-lg text-gray-600">
+        Serviços técnicos profissionais com mais de 20 anos de experiência
       </p>
     </div>
 
