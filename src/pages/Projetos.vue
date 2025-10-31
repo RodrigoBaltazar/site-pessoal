@@ -26,7 +26,7 @@ const projects = ref([
     technologies: ['VPS', 'HTML','CSS','Javascript', 'Nginx', 'Docker', 'Linux', 'PHP', 'SQLITE'],
     image: '/projects/OrdemDeCompra.png',
     status: 'Concluído',
-    link: 'https://www.oc.nonanena.com.br',
+    link: 'https://oc.nonanena.com.br',
     category: 'all'
   },
   {
