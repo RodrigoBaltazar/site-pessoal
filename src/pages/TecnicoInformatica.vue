@@ -29,6 +29,9 @@ const policies = ref([
       <p class="text-xl text-gray-600">
         Serviços técnicos profissionais com mais de 20 anos de experiência
       </p>
+        <p class="text-xl text-gray-600">
+        Suporte técnico premium para empresas e profissionais que exigem excelência.
+      </p>
     </div>
 
     <!-- Serviços -->
