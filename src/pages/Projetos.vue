@@ -57,7 +57,7 @@ const projects = ref([
     category: 'all'
   },
   {
-    title: 'Site para caminhoneiro autonomo',
+    title: 'Site para caminhoneiro autônomo',
     description: 'Website para divulgação de serviços de um caminhoneiro autônomo com informações sobre o veiculo, localização e contato.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Linux'],
     image: '/projects/claudio-desc.jpg',
