@@ -12,6 +12,15 @@ const projects = ref([
     category: 'all'
   },
   {
+    title: 'Diablo 2 Hub',
+    description: 'Criação de um hub para comunidade de jogadores de diablo 2. Agregador de vídeos e ferramentas.',
+    technologies: ['Python', 'Flask', 'Responsividade', 'React', 'vps', 'Segurança'],
+    image: '/projects/diablo2hub.jpg',
+    status: 'Em desenvolvimento',
+    link: 'https://www.diablo2hub.com',
+    category: 'all'
+  },
+  {
     title: 'Fronteiras da Ciência - UFRGS',
     description: 'Instalação e reparação de bugs no template Wordpress do site Fronteiras da Ciência - UFRGS.',
     technologies: ['Wordpress', 'CPD', 'Liderança', 'Responsividade', 'Migração'],

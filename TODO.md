@@ -1,3 +1,7 @@
+### 22/04/2026
+    [ ] - Adicionar projeto diablo2hub
+    [ ] - Adicionar blog.rodrigobaltazar.com.br
+
 ### 05/05/2025
 
     [x] - Colocar na aba tecnico-informatica as seguintes redes: Linkedin e Instagram
