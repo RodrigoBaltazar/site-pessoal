@@ -2,7 +2,7 @@
     [X] - Colocar oc.nonanena como descontinuado
 
 ### 22/04/2026
-    [ ] - Adicionar projeto diablo2hub
+    [X] - Adicionar projeto diablo2hub
     [ ] - Adicionar blog.rodrigobaltazar.com.br
 
 ### 05/05/2025
