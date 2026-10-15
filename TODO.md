@@ -1,3 +1,6 @@
+### 15/10/2026
+    [X] - Colocar oc.nonanena como descontinuado
+
 ### 22/04/2026
     [ ] - Adicionar projeto diablo2hub
     [ ] - Adicionar blog.rodrigobaltazar.com.br

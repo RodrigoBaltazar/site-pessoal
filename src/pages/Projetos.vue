@@ -34,7 +34,7 @@ const projects = ref([
     description: 'Sistema para ordem de compras de uma micro confeitaira',
     technologies: ['VPS', 'HTML','CSS','Javascript', 'Nginx', 'Docker', 'Linux', 'PHP', 'SQLITE'],
     image: '/projects/OrdemDeCompra.png',
-    status: 'Concluído',
+    status: 'Descontinuado',
     link: 'https://oc.nonanena.com.br',
     category: 'all'
   },
