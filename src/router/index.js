@@ -4,6 +4,8 @@ import Contact from '../pages/Contato.vue'
 import About from '../pages/Sobre.vue'
 import Projects from '../pages/Projetos.vue'
 import TecnicoInformatica from '../pages/TecnicoInformatica.vue'
+import CRM from '../pages/Gerenciamento-de-clientes.vue'
+
 const routes = [
   {
     path: '/',
@@ -29,6 +31,11 @@ const routes = [
     path: '/tecnico-informatica',
     name: 'TecnicoInformatica',
     component: TecnicoInformatica
+  },
+  {
+    path: '/Gerenciamento-de-clientes',
+    name: 'CRM',
+    component: CRM
   }
 ]
 
