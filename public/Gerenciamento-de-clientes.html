@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EspoCRM sob medida — organize seus clientes sem pagar por pessoa</title>
+  <title>Sistema para organização do seu negócio - Gerencie seus clientes </title>
   <meta name="description" content="Sistema de CRM sob medida, em português, sem pagar por usuário. Implementação, integração e suporte.">
   <style>
     /* ========== RESET + TOKENS ========== */
@@ -264,10 +264,16 @@
           Você não paga por cada pessoa que usa, e os seus dados são seus — ficam onde você quiser.
         </p>
         <div class="hero-cta">
-          <a href="#contato" class="btn btn-primary">Quero uma conversa grátis</a>
-          <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20sistema" target="_blank" rel="noopener" class="btn btn-outline">Falar no WhatsApp</a>
+          <a id="link-whatsapp" href="#contato" class="btn btn-primary">Gostaria de uma consultoria gratuíta? Entre em contato via WhatsApp</a>
+          <a id="link-whatsapp" href="#" target="_blank"
+              style="position:fixed; bottom:20px; right:20px; z-index:9999;
+                      background:#25D366; color:#fff; padding:14px 18px;
+                      border-radius:50px; text-decoration:none; font-weight:bold;
+                      box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+              💬 WhatsApp
+          </a>
         </div>
-        <p class="hero-telefone">Prefere ligar? <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+        <p class="hero-telefone">Prefere ligar? <a id="telefone-link" href="#">(51) 99723-2493</a></p>
         <div class="hero-badges">
           <span>Você não paga por cada pessoa que usa</span>
           <span>Os dados ficam no seu servidor ou na nuvem</span>
@@ -439,13 +445,6 @@
       </div>
     </div>
   </section>
-
-  <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20sistema" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Falar no WhatsApp">
-    <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff" aria-hidden="true">
-      <path d="M16 2a13 13 0 0 0-11 20L3 30l8-2a13 13 0 1 0 5-26zm0 24a11 11 0 0 1-6-1.7l-.4-.3-5 1.3 1.3-4.9-.3-.4A11 11 0 1 1 16 26zm6-8.2c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.1l-1 1.2c-.2.2-.4.2-.7.1a8.6 8.6 0 0 1-2.6-1.6 9.7 9.7 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5a.6.6 0 0 0 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.3 3.4 14.7 14.7 0 0 0 5.6 4.9c2.1.9 2.1.6 2.5.6a3.3 3.3 0 0 0 2.2-1.6 2.8 2.8 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.4z"/>
-    </svg>
-  </a>
-
   <script>
     // Troque o telefone acima (3 ocorrências de 5511999999999 e "11) 99999-9999") pelos reais.
     const form = document.getElementById('form-contato');
@@ -479,6 +478,19 @@
         msgObs.style.display = 'block';
       }, 6000);
     });
+  </script>
+  <script>
+    const numero = "5551997232493";
+    const mensagem = "Olá, vim pelo site, gostaria de conversar sobre o sistema.";
+
+    const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+    document.getElementById("link-whatsapp").href = link;
+  </script>
+  <script>
+    const telLink = document.getElementById('telefone-link');
+    // O número é montado apenas quando a página carrega no navegador
+    telLink.href = 'tel:' + '+5551997232493';
   </script>
 </body>
 </html>

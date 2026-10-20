@@ -4,7 +4,6 @@ import Contact from '../pages/Contato.vue'
 import About from '../pages/Sobre.vue'
 import Projects from '../pages/Projetos.vue'
 import TecnicoInformatica from '../pages/TecnicoInformatica.vue'
-import CRM from '../pages/Gerenciamento-de-clientes.vue'
 
 const routes = [
   {
