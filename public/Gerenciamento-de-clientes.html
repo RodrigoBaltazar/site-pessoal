@@ -83,12 +83,26 @@
       border-radius: var(--radius);
       padding: 24px;
     }
-    .hero-visual .bar { height: 10px; border-radius: 6px; background: rgba(255,255,255,.15); margin-bottom: 12px; }
+    .hero-visual .bar {
+      min-height: 10px;
+      padding: 10px 14px;
+      border-radius: 6px;
+      background: rgba(255,255,255,.15);
+      margin-bottom: 12px;
+      color: #fff;
+      font-size: .9rem;
+      box-sizing: border-box;
+    }
+    .hero-visual .bar.w40 { width: 40%; }
     .hero-visual .bar.w60 { width: 60%; }
     .hero-visual .bar.w80 { width: 80%; }
-    .hero-visual .bar.w40 { width: 40%; }
-    .hero-visual .card-mini { background: rgba(255,255,255,.1); border-radius: 8px; padding: 14px; margin-top: 16px; }
 
+    .hero-visual .card-mini {
+      background: rgba(255,255,255,.1);
+      border-radius: 8px;
+      padding: 14px;
+      margin-top: 16px;
+    }
     /* ========== PROBLEMA ========== */
     .problema { background: var(--light); }
     .problema-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
@@ -258,10 +272,10 @@
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <h1>Um sistema pra organizar seus clientes, do seu jeito e sem pagar por pessoa</h1>
+        <h1>Um sistema pra organizar seus clientes, rápido, fácil e eficiente.</h1>
         <p class="sub">
-          A gente monta tudo pra você: o sistema, os ajustes, o treino do time e o suporte no dia a dia.
-          Você não paga por cada pessoa que usa, e os seus dados são seus — ficam onde você quiser.
+          Tem em torno ou mais de 50 clientes e precisa se organizar? Fale conosco.
+          E os seus dados são seus — ficam onde você quiser.
         </p>
         <div class="hero-cta">
           <a id="link-whatsapp" href="#contato" class="btn btn-primary">Gostaria de uma consultoria gratuíta? Entre em contato via WhatsApp</a>
@@ -273,7 +287,7 @@
               💬 WhatsApp
           </a>
         </div>
-        <p class="hero-telefone">Prefere ligar? <a id="telefone-link" href="#">(51) 99723-2493</a></p>
+        <p class="hero-telefone">Prefere ligar? <a id="telefone-link" href="#">Carregando…</a></p>
         <div class="hero-badges">
           <span>Você não paga por cada pessoa que usa</span>
           <span>Os dados ficam no seu servidor ou na nuvem</span>
@@ -281,10 +295,9 @@
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
-        <div class="bar w40"></div>
-        <div class="bar w80"></div>
-        <div class="bar w60"></div>
-        <div class="card-mini"><strong>Etapas da venda</strong><br><span style="opacity:.7;font-size:.85rem">Primeiro contato → Proposta → Fechou</span></div>
+        <div class="bar w80">Organize atendimentos, tarefas.</div>
+        <div class="bar w60">Tenha tudo centralizado em um lugar</div>
+        <div class="card-mini"><strong>Só tudo que diz respeito a sua empresa.</strong><br><span style="opacity:.7;font-size:.85rem">Primeiro contato → Proposta → Fechou</span></div>
         <div class="card-mini"><strong>+ 320 clientes em contato</strong><br><span style="opacity:.7;font-size:.85rem">Tudo sempre atualizado</span></div>
         <div class="card-mini"><strong>Avisos automáticos</strong><br><span style="opacity:.7;font-size:.85rem">O sistema lembra você de ligar de volta</span></div>
       </div>
@@ -480,7 +493,8 @@
     });
   </script>
   <script>
-    const numero = "5551997232493";
+    // Script whatsapp
+    const numero = "5551xxxxxxxxx";
     const mensagem = "Olá, vim pelo site, gostaria de conversar sobre o sistema.";
 
     const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
@@ -488,9 +502,20 @@
     document.getElementById("link-whatsapp").href = link;
   </script>
   <script>
-    const telLink = document.getElementById('telefone-link');
-    // O número é montado apenas quando a página carrega no navegador
-    telLink.href = 'tel:' + '+5551997232493';
-  </script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const ddd     = "51";
+    const parte1  = "";
+    const parte2  = "";
+    const numero  = `+55${ddd}${parte1}${parte2}`;
+
+    const link = document.getElementById("telefone-link");
+    if (!link) {
+      console.warn("Elemento #telefone-link não encontrado");
+      return;
+    }
+    link.href = `tel:${numero}`;
+    link.textContent = `(${ddd}) ${parte1}-${parte2}`;
+  });
+</script>
 </body>
 </html>
