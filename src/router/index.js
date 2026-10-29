@@ -32,9 +32,14 @@ const routes = [
     component: TecnicoInformatica
   },
   {
-    path: '/Gerenciamento-de-clientes',
+    path: '/gerenciamento-de-clientes',
     name: 'CRM',
     component: CRM
+  },
+  {
+    path: '/politica-de-privacidade',
+    name: 'privacidade',
+    component: privacidade
   }
 ]
 
