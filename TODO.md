@@ -1,3 +1,6 @@
+### 18/11/2026
+    [X] - GTM novo para campanha tec informatica
+
 ### 15/10/2026
     [X] - Colocar oc.nonanena como descontinuado
 
