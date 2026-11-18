@@ -34,12 +34,12 @@ const routes = [
   {
     path: '/gerenciamento-de-clientes',
     name: 'CRM',
-    component: CRM
+    redirect: '/gerenciamento-de-clientes.html'
   },
   {
-    path: '/politica-de-privacidade',
+    path: '/politica',
     name: 'privacidade',
-    component: privacidade
+    redirect: 'politica-de-privacidade.html'
   }
 ]
 
